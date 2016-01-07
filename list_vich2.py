@@ -56,7 +56,7 @@ y = np.random.uniform(0,Y,n)
 start = timer()
 #********************
 
-# seting the 'n' particles into all the 'n_binX' boxes in x-universe:
+# seting the 'n' particles into all the 'n_binX' boxes in x-universe: #retangulos#
    ## 'i in range(n)' rolls all the 'i' particles positions in the x-universe; 
    ## 'j' is the index of the 'x box' wich each 'i' particles are going to be allocated: 
       ### if 'x[i=9] = 0' than the '10' particle will belong to the 'x box 0' ('listX[0].append(9)') 
@@ -64,7 +64,7 @@ for i in range(n):
    j = int((x[i])/bin_size)
    listX[j].append(i)
 
-# seting the 'n' particles into all the 'n_boxes' in the xy-universe:
+# seting the 'n' particles into all the 'n_boxes' in the xy-universe: #boxes#
    ##'k in range(n_binX)' rolls all the 'k' boxes in the 'listX';
    ## them for each 'listX[k]' check the y position of all the kk particals into the listX[k];
    ## if ther is a particle kk in the listX[k], this particles will be appended to the respective 'boxes[j]' by the metric:
