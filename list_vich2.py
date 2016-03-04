@@ -68,7 +68,8 @@ for i in range(n):
    ##'k in range(n_binX)' rolls all the 'k' boxes in the 'listX';
    ## them for each 'listX[k]' check the y position of all the kk particals into the listX[k];
    ## if ther is a particle kk in the listX[k], this particles will be appended to the respective 'boxes[j]' by the metric:
-      ### ex: just read the line you layze boy! 
+      ### ex: just read the line you layze boy!
+      ### n_binX = numero de retangulos
 for k in range(n_binX):
    for kk in listX[k]:
       j = int(y[kk]/bin_size)*n_binX + k
